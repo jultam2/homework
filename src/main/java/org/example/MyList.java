@@ -1,10 +1,12 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
 public class MyList<T extends Number> implements Iterable<T> {
+
     private Object[] array;
     private int size;
     private static final int CAPACITY = 10;
