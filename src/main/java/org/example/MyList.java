@@ -97,7 +97,7 @@ public class MyList<T extends Number> implements Iterable<T> {
         if (obj == null || getClass() != obj.getClass()) {
             return false;
         }
-        MyList<?> otherList = (MyList<?>) obj;
+        MyList<T> otherList = (MyList<T>) obj;
         if (size != otherList.size) {
             return false;
         }
